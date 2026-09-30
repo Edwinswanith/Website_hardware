@@ -1,0 +1,40 @@
+/* Tech Cogniverse film site. The palette is taken from the film: daylight lab, board green, copper. */
+:root {
+  --lab: #f4f2ee; /* page canvas, the white bench */
+  --mist: #e7e5e0;
+  --ink: #1a1c1e; /* 15.6:1 on lab */
+  --ink-2: #4b4f55; /* 7.6:1 */
+  --ink-3: #676b71; /* 5.1:1 */
+  --line: rgba(26, 28, 30, 0.14);
+  --board: #0f3b2e; /* deep board green */
+  --board-2: #174a3b;
+  --copper: #c07a3e; /* traces; graphics only */
+  --copper-ink: #8a5024; /* text-safe copper, 5.9:1 on lab */
+  --glow: #ffe8c4; /* the first signal of light */
+  --sans: var(--f-sans), system-ui, sans-serif;
+  --mono: var(--f-mono), ui-monospace, monospace;
+  --gutter: clamp(16px, 4vw, 56px);
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --header-h: 64px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--lab); color: var(--ink); font-family: var(--sans); font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+img, canvas, svg, video { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; font-weight: 500; line-height: 1.02; letter-spacing: -0.04em; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+::selection { background: var(--glow); }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -48px; z-index: 100; background: var(--ink); color: var(--lab); padding: 10px 14px; font-family: var(--mono); font-size: 13px; text-decoration: none; }
+.skip:focus { top: 12px; }
+.btn { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: var(--ink); color: var(--lab); text-decoration: none; font-weight: 500; font-size: 16px; transition: background 160ms var(--ease); }
+.btn:hover { background: var(--board); }
+.btn--ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.btn--ghost:hover { background: var(--ink); color: var(--lab); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

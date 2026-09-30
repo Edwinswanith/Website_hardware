@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+.DS_Store
+review/
+# Generated masters (stills, raw Veo clips) stay private; only served derivatives ship.
+assets-src/**/*.jpg
+assets-src/**/*.jpeg
+assets-src/**/*.png
+assets-src/**/*.mp4
