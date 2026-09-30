@@ -14,7 +14,7 @@
 .navCta { padding: 8px 16px; border-radius: 999px; background: var(--ink); color: var(--lab); }
 .navCta:hover { background: var(--board); }
 
-.section { position: relative; z-index: 2; background: var(--lab); padding: clamp(80px, 11vw, 160px) var(--gutter) 0; max-width: 1440px; margin: 0 auto; display: grid; gap: clamp(28px, 4vw, 48px); }
+.section { position: relative; z-index: 2; background: var(--lab); padding: clamp(56px, 7vw, 100px) var(--gutter) 0; max-width: 1440px; margin: 0 auto; display: grid; gap: clamp(28px, 4vw, 48px); }
 .head { display: grid; gap: 14px; max-width: 46rem; }
 .head :global(.label) { color: var(--copper-ink); }
 .h2 { font-size: clamp(36px, 4.6vw, 72px); letter-spacing: -0.045em; line-height: 0.98; }
@@ -45,7 +45,7 @@
 .quote blockquote { margin: 0; font-size: clamp(24px, 2.4vw, 36px); line-height: 1.2; letter-spacing: -0.03em; }
 .quote :global(.label) { color: var(--ink-3); }
 
-.contact { padding-bottom: clamp(80px, 10vw, 140px); }
+.contact { padding-bottom: clamp(56px, 7vw, 100px); }
 .contactRow { display: flex; flex-wrap: wrap; gap: 12px; }
 .models { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .models li { display: grid; gap: 8px; align-content: start; padding: 20px; border-radius: 18px; background: var(--mist); }
